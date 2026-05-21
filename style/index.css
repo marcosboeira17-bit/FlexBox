@@ -1,86 +1,181 @@
-*{
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+/* BODY */
+
+body {
     display: flex;
+    min-height: 100vh;
+    font-family: 'Lucida Sans',
+    'Lucida Sans Regular',
+    'Lucida Grande',
+    'Lucida Sans Unicode',
+    Geneva,
+    Verdana,
+    sans-serif;
 }
-.decorativo{
+
+/* BARRA AZUL */
+
+.decorativo {
     width: 3%;
-    
     background-color: rgb(66, 66, 185);
     border-radius: 16px 0px 0px 16px;
-
 }
-.resumo{
+
+/* LADO ESQUERDO */
+
+.resumo {
     width: 30%;
-    
-    
+    background-color: rgb(196, 237, 255);
 }
 
-.infos_pessoais{
-    width: 67%;
-    
-    background-color: red;
-}
-.identificacao img{
-    width: 80%;
-    border-radius: 200px;
-    margin-left: 10%;
-    margin-top: 10%;
-}
+/* IDENTIFICAÇÃO */
 
-.identificacao h1{
-    font-size: 80px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 800;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-.identificacao h2{
-    font-size: 56px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-hr {
-    width: 100%;
-}
 .identificacao {
     background-color: rgb(148, 151, 150);
     padding-bottom: 5%;
 }
 
-.identificacao p{
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
+.identificacao img {
+    width: 80%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 10%;
 }
 
-.contato div{
+.identificacao h1 {
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.identificacao h2 {
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.identificacao p {
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* CONTATO */
+
+.contato div {
     display: flex;
     align-items: center;
     padding-left: 5%;
     padding-top: 3%;
-
 }
 
-.contato img{
+.contato img {
     width: 48px;
     height: 48px;
     padding-right: 3%;
 }
-.contato p{
+
+.contato p {
     font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.idiomas h1, .habilidades h1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+/* IDIOMAS E HABILIDADES */
+
+.idiomas,
+.habilidades {
+    padding: 20px;
+}
+
+.idiomas h1,
+.habilidades h1 {
+    font-size: 32px;
+}
+
+.idiomas div,
+.habilidades div {
+    display: flex;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.idiomas img,
+.habilidades img {
+    width: 32px;
+    margin-right: 10px;
+}
+
+.idiomas p,
+.habilidades p {
+    font-size: 18px;
+    font-weight: 300;
+    width: 120px;
+}
+
+/* BOLINHAS */
+
+.bolinha_azul {
+    width: 10px;
+    height: 10px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+.bolinha_branca {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+
+/* LADO DIREITO */
+
+.infos_pessoais {
+    width: 67%;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* TÍTULOS DIREITA */
+
+.titulo_info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+.titulo_info img {
+    width: 50px;
+}
+
+/* TEXTOS DIREITA */
+
+.texto_info p,
+.perfil p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* EDUCAÇÃO E EXPERIÊNCIA */
+
+.Educacao,
+.Experiencia_profissional {
+    display: flex;
+    flex-direction: column;
 }
